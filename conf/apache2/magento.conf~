@@ -1,0 +1,18 @@
+<VirtualHost *:80>
+
+   ServerAdmin admin@magento2.smile-magento.com
+   ServerName magento2.smile-magento.com
+   ServerAlias www.magento2.smile-magento.com
+   DocumentRoot /var/www/magento2/src
+
+   <Directory /var/www/magento2/src>
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+   </Directory>
+
+   ErrorLog ${APACHE_LOG_DIR}/error.log
+   CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+</VirtualHost>
+

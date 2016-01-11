@@ -1,0 +1,7 @@
+nginx/1.9.7
+
+#NGINX
+chown -R www-data:www-data .
+find . -type d -exec chmod 700 {} \;
+find . -type f -exec chmod 600 {} \;
+chmod +x bin/magento

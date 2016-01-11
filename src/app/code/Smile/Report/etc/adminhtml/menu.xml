@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Smile_Report::blog_content" title="Blog" module="Smile_Report" sortOrder="50" parent="Magento_Backend::content" resource="Smile_Report::blog_content" />
+        <add id="Smile_Report::post" title="Posts" module="Smile_Report" sortOrder="0" parent="Smile_Report::blog_content" action="blog/post" resource="Smile_Report::post"/>
+    </menu>
+</config>
